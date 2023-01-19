@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimball Lock Test</title>
+</head>
+
+<body>
+    <div id="dom"
+        style="width: max-content; position: absolute; top:10%; left: 50%; transform:translate(-50%,-50%); z-index:999; color: white; text-align: center;">
+        <h3 style="margin: 10px;">Gimball Lock Test</h3>
+        <p style="margin: 10px; font-size: small;">빨간색이 x축, 노란색이 y축, 초록색이 z축 <br>
+            짐벌락 현상시 이미 x축에서 y축과 z축이 겹치도록 회전한 상태이기에 <br>
+            도형은 우리가 생각하는 y축 회전이 아닌 z축 회전으로 돌고 있음 <br>
+            "rotation.reorder('yxz')"<br>
+            위 코드 적용시 y축 회전이 우선으로 들어가면서 <br>
+            우리가 생각하는 y축 회전으로 돌아감
+        </p>
+    </div>
+    <canvas class="webgl"></canvas>
+</body>
+
+</html>
